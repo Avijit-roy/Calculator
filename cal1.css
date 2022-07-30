@@ -1,0 +1,55 @@
+#square {
+  width: 12cm;
+  height: 19cm;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  padding: 20px;
+
+}
+th{
+  padding: 2px;
+}
+
+td {
+  border: 1px rgb(109, 109, 109);
+  text-align: center;
+  border-spacing: 5px;
+  border-radius: 7px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+/* th {
+  width: 11cm;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+} */
+
+input {
+  width: 400px;
+  height: 65px;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  content: 50cm;
+  margin: 10px;
+  font-size: xx-large;
+}
+
+button {
+  padding: 7%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
