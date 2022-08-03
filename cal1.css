@@ -1,55 +1,58 @@
+body {
+  animation-name: clock-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  overflow-x: hidden;
+  background-color: rgb(235, 234, 234);
+}
 #square {
-  width: 12cm;
-  height: 19cm;
-  background: rgb(255, 255, 255);
+  width: 420px;
+  height: 550px;
   text-align: center;
   border-radius: 5px;
-  border: 2px solid black;
-  box-shadow: 10px 10px 5px #aaaaaa;
-  padding: 20px;
-
+  border: 0.5px solid rgb(192, 192, 192);
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 19px 19px 31px #9d9d9d, -19px -19px 31px #ffffff;
+  padding: 30px;
+  margin: 30px;
+  position: relative;
 }
-th{
-  padding: 2px;
-}
-
-td {
-  border: 1px rgb(109, 109, 109);
-  text-align: center;
-  border-spacing: 5px;
-  border-radius: 7px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
-}
-
-/* th {
-  width: 11cm;
-  border: 5px solid black;
-  border-radius: 5px;
-  padding: 50px;
-  margin: 0px;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-} */
-
 input {
-  width: 400px;
-  height: 65px;
-  border: 5px solid black;
-  border-radius: 5px;
+  width: 85%;
+  height: 60px;
+  border: 5px solid rgb(34, 34, 34);
+  border-radius: 10px;
   padding: 10px;
-  margin: 0px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
-  content: 50cm;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 14px #8d8d8d, inset -20px -20px 14px #ffffff;
   margin: 10px;
   font-size: xx-large;
 }
 
 button {
   padding: 7%;
-  border: none;
+  border: 1px;
+  width: 70px;
+  height: 88px;
   background-color: transparent;
+  border-radius: 50px;
   cursor: pointer;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 8px 8px 16px #aaaaaa, -8px -8px 16px #ffffff;
+}
+button.ezu {
+  width: 170px;
+  border-radius: 30px;
+  background-color: #c5c5c5;
+}
+button:hover {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 8px 8px 16px #aaaaaa, -8px -8px 16px #ffffff;
 }
