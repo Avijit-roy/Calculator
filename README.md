@@ -1,2 +1,2 @@
-# Avijit-roy.github.io
+# Avijit-roy
 web calculator app
