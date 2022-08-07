@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Analog calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="cal1.css">
+</head>
+
+<body>
+  <div id="square">
+    <table>
+      <tr>
+        <th colspan="4"><input type="text" id="result"></th>
+      </tr>
+      <tr>
+        <td><button onclick="zer()">
+            <h1>AC</h1>
+          </button></td>
+        <td><button onclick="ere()">
+            <h1><span>&#9003;</span></h1>
+          </button></td>
+        <td><button onclick="perce()">
+            <h1>%</h1>
+          </button></td>
+        <td><button onclick="dis('/')">
+            <h1>/</h1>
+          </button></td>
+      </tr>
+      <tr>
+        <td><button onclick="dis('7')">
+            <h1>7</h1>
+          </button></td>
+        <td><button onclick="dis('8')">
+            <h1>8</h1>
+          </button></td>
+        <td><button onclick="dis('9')">
+            <h1>9</h1>
+          </button></td>
+        <td><button onclick="dis('*')">
+            <h1>*</h1>
+          </button></td>
+      </tr>
+      <tr>
+        <td><button onclick="dis('4')">
+            <h1>4</h1>
+          </button></td>
+        <td><button onclick="dis('5')">
+            <h1>5</h1>
+          </button></td>
+        <td><button onclick="dis('6')">
+            <h1>6</h1>
+          </button></td>
+        <td><button onclick="dis('-')">
+            <h1>-</h1>
+          </button></td>
+      </tr>
+      <tr>
+        <td><button onclick="dis('1')">
+            <h1>1</h1>
+          </button></td>
+        <td><button onclick="dis('2')">
+            <h1>2</h1>
+          </button></td>
+        <td><button onclick="dis('3')">
+            <h1>3</h1>
+          </button></td>
+        <td><button onclick="dis('+')">
+            <h1>+</h1>
+          </button></td>
+      </tr>
+      <tr>
+        <td><button onclick="dis('0')">
+            <h1>0</h1>
+          </button></td>
+        <td><button onclick="dis('.')">
+            <h1>.</h1>
+          </button></td>
+        <td colspan="2"><button onclick="cal()" class="ezu">
+            <h1>=</h1>
+          </button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="cal2.js">
+  </script>
+
+</body>
+
+</html>
