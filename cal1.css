@@ -22,6 +22,7 @@ body {
   padding: 30px;
   margin: 30px;
   position: relative;
+  margin-top: 10%;
 }
 input {
   width: 85%;
