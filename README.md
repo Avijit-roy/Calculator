@@ -14,4 +14,4 @@ My webpage features an analog calculator built using HTML, CSS, and JavaScript. 
 
 https://avijit-roy.github.io/Calculator/index.html
 
-![](https://github.com/Avijit-roy/Analog-clock/blob/main/Screenshot741.png)
+![](https://github.com/Avijit-roy/Calculator/blob/main/Screenshot741.png)
