@@ -1,38 +1,45 @@
+const resultElement = document.getElementById("result");
+const OPERATORS = ["+", "-", "*", "/"];
+
 function dis(v) {
-  document.getElementById("result").value += v;
+  resultElement.value += v;
 }
+
 function cal() {
-  let x = document.getElementById("result").value;
-  let y = eval(x);
-  document.getElementById("result").value = y;
+  try {
+    const result = Function('"use strict"; return (' + resultElement.value + ')')();
+    resultElement.value = result;
+  } catch (error) {
+    resultElement.value = "Error";
+    console.error("Calculation error:", error);
+  }
 }
+
 function ere() {
-  let x = document.getElementById("result").value;
-  let y = x.length;
-  document.getElementById("result").value = x.substr(0, y - 1);
+  resultElement.value = resultElement.value.slice(0, -1);
 }
+
 function zer() {
-  document.getElementById("result").value = "";
+  resultElement.value = "";
 }
+
 function perce() {
-  let x = document.getElementById("result").value;
-  let y = x.length;
-  var k;
-  const z = ["+", "*", "-", "/"];
-  let i = y - 1;
-  loop1: for (i = y - 1; i > -1; i--) {
-    loop2: for (var j = 0; j <= 3; j++) {
-      if (x[i] == z[j]) {
-        k = i;
-        break loop1;
-      } else {
-        continue;
-      }
+  const input = resultElement.value;
+  const lastOperatorIndex = findLastOperator(input);
+  
+  if (lastOperatorIndex === -1) return;
+  
+  const operator = input[lastOperatorIndex];
+  const value = parseFloat(input.slice(lastOperatorIndex + 1)) / 100;
+  
+  resultElement.value = input.slice(0, lastOperatorIndex + 1) + value;
+}
+
+function findLastOperator(str) {
+  for (let i = str.length - 1; i >= 0; i--) {
+    if (OPERATORS.includes(str[i])) {
+      return i;
     }
   }
-  let md = x.substr(k + 1, y);
-  md = md / 100;
-  x = x.substr(0, k + 1);
-  x = x.concat(md);
-  document.getElementById("result").value = x;
+  return -1;
 }
